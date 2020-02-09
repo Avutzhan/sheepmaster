@@ -23,6 +23,8 @@ Route::get('report/{key}', 'ReportController@show');
 
 //Sheeps
 Route::get('sheeps', 'SheepController@index');
+Route::post('sheeps/create', 'SheepController@createSheeps');
 
 //Corrals
 Route::get('corrals', 'SheepController@indexForCorrals');
+Route::post('corrals/create', 'SheepController@createCorrals');

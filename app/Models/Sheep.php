@@ -20,7 +20,8 @@ class Sheep extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function corral(){
+    public function corral()
+    {
         return $this->belongsTo(Corral::class);
     }
 }

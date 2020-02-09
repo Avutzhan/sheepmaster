@@ -1985,8 +1985,8 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uris = 'http://sheepmaster.loc/api/corrals';
-    this.axios.get(uris).then(function (response) {
+    var url = 'http://sheepmaster.loc/api/corrals';
+    this.axios.get(url).then(function (response) {
       _this.corrals = response.data;
     });
   }
@@ -2036,8 +2036,8 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uris = 'http://sheepmaster.loc/api/reports';
-    this.axios.get(uris).then(function (response) {
+    var url = 'http://sheepmaster.loc/api/reports';
+    this.axios.get(url).then(function (response) {
       _this.reports = response.data;
     });
   }
@@ -2116,8 +2116,8 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uri = "http://sheepmaster.loc/api/report/".concat(this.$route.params.key);
-    this.axios.get(uri).then(function (response) {
+    var url = "http://sheepmaster.loc/api/report/".concat(this.$route.params.key);
+    this.axios.get(url).then(function (response) {
       _this.date = response.data;
     });
   }

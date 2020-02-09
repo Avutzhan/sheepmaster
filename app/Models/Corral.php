@@ -11,7 +11,8 @@ class Corral extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function sheeps(){
+    public function sheeps()
+    {
         return $this->hasMany(Sheep::class);
     }
 }
